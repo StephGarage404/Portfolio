@@ -1,0 +1,33 @@
+body
+{
+    background-image: url("./Images/Aventador1.jpg");
+    background-attachment: fixed;
+    margin-top: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardcenter
+{
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.custom-btn {
+    background-color: yellow;
+    color: black;
+}
+
+ /* Change la couleur au survol */
+.custom-btn:hover {
+    background-color: gold;
+}
+
+.custom-card:hover {
+    border: 2px solid yellow;
+    transition: border 0.3s ease; 
+}
+
