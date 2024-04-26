@@ -6,22 +6,42 @@
     <title>Portfolio de Stéphane Murard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
  
+<!-- debut de header -->
    
-    <header>
+    <header id="header">
         <nav id="Menu" class="navbar fixed-top">
-            <form class="container-fluid justify-content-start">
+            <div class="container-fluid justify-content-start">
                 <a class="btn btn-outline-success me-2 custom-btn" href="#!" type="button">Accueil</a>
                 <a class="btn btn-outline-success me-2 custom-btn" href="#presentation">Qui suis-je ?</a>
                 <a class="btn btn-outline-success me-2 custom-btn" href="#projets">Projets</a>
                 <a class="btn btn-outline-success me-2 custom-btn" href="#competences">Compétences</a>
                 <a class="btn btn-outline-success me-2 custom-btn" href="#contact">Contact</a>
-            </form>
+            </div>
         </nav>
     </header>
 
+<!-- fin de header -->
+
+<!-- début de menu burger -->
+
+<header id="menu_buger">
+    <i class="fa-solid fa-bars fa-2xl menu_burger_icon" style="color: rgb(255, 251, 0);"></i>
+    <div class="menu_burger_link hiddendiv">
+        <a class="btn btn-outline-success me-2 custom-btn" href="#!" type="button">Accueil</a>
+        <a class="btn btn-outline-success me-2 custom-btn" href="#presentation">Qui suis-je ?</a>
+        <a class="btn btn-outline-success me-2 custom-btn" href="#projets">Projets</a>
+        <a class="btn btn-outline-success me-2 custom-btn" href="#competences">Compétences</a>
+        <a class="btn btn-outline-success me-2 custom-btn" href="#contact">Contact</a>
+    </div>
+</header>
+
+<!-- fin de menu burger --> 
+
+<!-- début de présentation --> 
 
     <section id="presentation">
         <div class="card cardcenter margin custom-card">
@@ -32,6 +52,11 @@
         </div>
     </section>
 
+ <!-- fin de présentation -->    
+
+
+ <!-- début de projets -->  
+
     <section id="projets">
         <div class="card cardcenter custom-card">
             <img src="./Images/Portfolio-projets.jpg" class="card-img-top" alt="...">
@@ -40,6 +65,10 @@
             </div>
         </div>
     </section>
+
+<!-- fin de projets -->  
+
+<!-- début de compétences --> 
 
     <section id="competences">
         <div class="card cardcenter custom-card">
@@ -50,6 +79,10 @@
         </div>
     </section>
 
+<!-- fin de compétences --> 
+
+<!-- début de contact -->
+
     <section id="contact">
         <div class="card cardcenter custom-card">
             <img src="./Images/portfolio-contact.jpg" class="card-img-top" alt="...">
@@ -59,8 +92,15 @@
         </div>
     </section>
 
+<!-- fin de contact -->
+
+<!-- début de footer -->
+
     <footer></footer>
 
+<!-- fin de footer -->
+
+    <script src="js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -21,7 +21,7 @@ body
     color: black;
 }
 
- /* Change la couleur au survol */
+/* Change la couleur au survol */
 .custom-btn:hover {
     background-color: gold;
 }
@@ -31,3 +31,32 @@ body
     transition: border 0.3s ease; 
 }
 
+#menu_buger {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+}
+
+
+/* media query */
+
+/* Fait disparaitre mes boutons quand je passe en dessous de 540px de large */
+@media screen and (max-width: 540px) {
+    
+    #header {
+        display: none;
+    }
+}
+
+/* Fait disparaitre mon menu Burger quand mon ecran dépasse 540px de large */
+@media screen and (min-width: 540px)
+{
+    #menu_buger{
+        display: none;
+    }
+}
+
+/* J'ai fais cette classe pour cacher tout mes liens grace au Display: none et qui me sert aussi dans mon js  */
+.hiddendiv {
+    display: none;
+}
