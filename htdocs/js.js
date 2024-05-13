@@ -13,3 +13,14 @@ menu_burger_icon.addEventListener('click', function()
 }
 )
 
+
+window.addEventListener("click", function(e){
+   
+    //voir si l'element sur lequel je clik a bien la classe test
+    if(e.target.classList.contains("test")){
+        // ajoute ajoute la classe animation a l'element 
+        e.target.classList.add("animation")
+        //ajoute mon code html à l'interieur
+        e.target.innerHTML = `<div>sqdqdsqdsqdq</div>`
+    }
+})
