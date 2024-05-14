@@ -10,7 +10,7 @@ body
 
 .cardcenter
 {
-    width: 20rem;
+    width: 28rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -37,6 +37,20 @@ body
     left: 80%;
 }
 
+#entete {
+    margin: 25%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#entete p {
+    font-size: xx-large;
+}
+
+section {
+    margin-top: 5%;
+}
 
 /* media query */
 
@@ -66,3 +80,4 @@ body
     z-index: 2;
     box-shadow: 2px 2px 2px #000;
 }
+
