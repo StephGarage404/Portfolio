@@ -34,7 +34,7 @@ function showLetters()
   if(i < txt.length)
 	{
 	  divText.innerHTML += `<span>${txt[i]}</span>` ;
-	  timeOut = setTimeout(showLetters,200)
+	  timeOut = setTimeout(showLetters,100)
 	  i++
 	}
 	else
