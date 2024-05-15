@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Stéphane Murard</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -73,7 +74,7 @@
         <div class="modal-content" style="background-image: url(./Images/bgportfolio1.jpg); background-size: cover; color: white">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Qui suis-je ?</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -86,7 +87,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
@@ -112,7 +113,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">Mes projets</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
             <div class="modal-body">
 
@@ -142,7 +143,7 @@
 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -161,30 +162,35 @@
         </div>
     </section>
 
-      <!-- Modal -->
-      <div class="modal fade" id="modal_competences" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal_competences" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Mes projets</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mes projets</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+    
+                     <!--CONTENU DE COMPETENCES-->
+                    <div class="competence">
+                        <img src="./Images/Logos compétences/html.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="competence">
+                        <img src="./Images/Logos compétences/css.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="competence">
+                        <img src="./Images/Logos compétences/JS.png" class="card-img-top" alt="...">
+                    </div>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fermer</button>
+                </div>
             </div>
-            <div class="modal-body">
-
-
-            {# CONTENU DE COMPETENCES #}
-            <img src="./Images/Logos compétences/html.jpg" class="card-img-top" alt="...">
-            <img src="./Images/Logos compétences/css.jpg" class="card-img-top" alt="...">
-            <img src="./Images/Logos compétences/JS.png" class="card-img-top" alt="...">
-
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div> 
+
+    
 
     <!-- fin de compétences -->
 
@@ -197,28 +203,61 @@
     </section>
 
 
+  
       <!-- Modal -->
       <div class="modal fade" id="modal_contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-dark text-white">
               <h1 class="modal-title fs-5" id="exampleModalLabel">Contact</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body bg_modal">
 
+                <section id="contact">
 
-                <p>Email: stephane.1995@hotmail.fr</p>
-                <p>Tel: 06 77 44 85 51</p>
-                
+                    <div>
+                        <p>contact</p>
+                    </div>
+            
+                        <form id='contact-form'>
+            
+                            <input type="hidden" name="contact_number" value="service_zney9zb">
+            
+                            <div class="input-group">
+                                <input class="input" required type="text" name="firstname">
+                                <label class="label" for="firstname">Nom</label>
+                            </div>
+            
+                            <div class="input-group">
+                                <input class="input" required type="text" name="lastname">
+                                <label class="label" for="lastname">Prenom</label>
+                            </div>
+            
+                            <div class="input-group">
+                                <input class="input" required type="mail" name="mail">
+                                <label class="label" for="mail"> Adress e-Mail</label>
+                            </div>
+            
+                            <div class="input-group">
+                                <textarea class="input textarea" required type="text" name="message"></textarea>
+                                <label class="label" for="sujet">Message</label>
+                            </div>
+            
+                            <div class="div_btn">
+                                <button type="submit" class="btn">Envoyer</button>
+                            </div>
+                        </form>
+            
+                </section>
 
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
 
 
@@ -229,7 +268,12 @@
     <footer></footer>
 
     <!-- fin de footer -->
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

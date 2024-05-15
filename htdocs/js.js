@@ -44,3 +44,35 @@ function showLetters()
 	}
 }
 showLetters();
+
+
+
+function afficherModal() {
+    $('#modal_contact').modal('show');
+
+Swal.fire({
+    title: "The Internet?",
+    text: "That thing is still around?",
+    icon: "question"
+  });
+}
+
+// formulaire de contact 
+
+
+emailjs.init({
+    publicKey: 'KPoCOa5cxhbTQWUCB',
+  });
+
+  window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_ulxw9xn', 'template_er8girl', this)
+            .then(() => {
+                console.log('SUCCESS!');
+            }, (error) => {
+                console.log('FAILED...', error);
+            });
+    });
+}
