@@ -65,23 +65,101 @@ window.onload = function () {
     });
 }
 
-// Animation logo 
-const Qselect = (element) => document.querySelector(element)
+// paralax background index
 
-const html = Qselect('#html')
-const css = Qselect('#css')
-const js = Qselect('#js')
-const symf = Qselect('#symf')
-const figma = Qselect('#figma')
-const php = Qselect('#php')
-
-const modal = Qselect('#competences')
+var image = document.getElementsByClassName('Parallax');
+new simpleParallax(image, {
+	overflow: true
+});
 
 
+// mise en place de linitialisation de gsap
 
-modal.addEventListener("click", function () {
-    console.log('blablablabal')
+gsap.registerPlugin(MotionPathPlugin);
+
+gsap.to("#css", {
+    duration: 1.5,
+    repeat: Infinity,
+    repeatDelay: 3,
+    yoyo: false,
+    motionPath: {
+        path: "#pathcss",
+        autoRotate: false,
+        alignOrigin: [0, 0]
+    }
+});
+
+gsap.registerPlugin(MotionPathPlugin);
+
+gsap.to("#figma", {
+    duration: 1.5, 
+    repeat: Infinity,
+    repeatDelay: 3,
+    yoyo: false,
+    motionPath:{
+      path: "#pathfigma",
+      autoRotate: false,
+      alignOrigin: [0, 0]
+    }
+  });
+
+
+
+  gsap.registerPlugin(MotionPathPlugin);
+
+  gsap.to("#html", {
+      duration: 1.5, 
+      repeat: Infinity,
+      repeatDelay: 3,
+      yoyo: false,
+      motionPath:{
+        path: "#pathhtml",
+        autoRotate: false,
+        alignOrigin: [0, 0]
+      }
+    });
+
+
     gsap.registerPlugin(MotionPathPlugin);
-    gsap.to('#html', {duration: 5, motionPath:"#path"});
-})
 
+    gsap.to("#js", {
+        duration: 1.5, 
+        repeat: Infinity,
+        repeatDelay: 3,
+        yoyo: false,
+        motionPath:{
+          path: "#pathjs",
+          autoRotate: false,
+          alignOrigin: [0, 0]
+        }
+      });
+
+
+      gsap.registerPlugin(MotionPathPlugin);
+
+      gsap.to("#php", {
+          duration: 1.5, 
+          repeat: Infinity,
+          repeatDelay: 3,
+          yoyo: false,
+          motionPath:{
+            path: "#pathphp",
+            autoRotate: false,
+            alignOrigin: [0, 0]
+          }
+        });
+
+
+      gsap.registerPlugin(MotionPathPlugin);
+
+      gsap.to("#symf", {
+          duration: 1.5, 
+          repeat: Infinity,
+          repeatDelay: 3,
+          yoyo: false,
+          motionPath:{
+            path: "#pathsymf",
+            autoRotate: false,
+            alignOrigin: [0, 0]
+          }
+        });
