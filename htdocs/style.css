@@ -35,6 +35,40 @@
     margin-top: -5em;
 }
 
+@media screen and (max-width: 975px) {
+    .Parallax {
+        width: 150%;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .Parallax {
+        width: 190%;
+        position: center;
+        top: -20px;
+        z-index: -1;
+
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .Parallax {
+        width: 330%;
+        position: fixed;
+        top: 0px;
+        left: -13em;
+        z-index: -1;
+
+    }
+}
+
+
+
 /* Change la couleur au survol */
 
 .custom-btn:hover {
@@ -138,6 +172,31 @@ section {
     #header {
         display: none;
     }
+
+    .cardcenter {
+
+        height: 15em;
+        width: 20em;
+    }
+
+    .cardcenter img {
+
+        height: 15em;
+        width: 20em;
+    }
+}
+
+@media screen and (max-width: 350px){ 
+
+    .cardcenter {
+        height: 10em;
+        width: 15em;
+    }
+
+    .cardcenter img {
+        height: 10em;
+        width: 15em;
+    }
 }
 
 /* Fait disparaitre mon menu Burger quand mon ecran dépasse 540px de large */
@@ -190,7 +249,6 @@ section {
     border-radius: 10px;
     transition: 150ms
         cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: rgba(0, 0, 0, 0.5);
     }
 
 .label {
@@ -232,7 +290,8 @@ section {
 
 .bg_modal {
 
-    background-image: url(./Images/ferrari-bg.jpg);
+    background-image: url(./Images/ferarrijente.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
